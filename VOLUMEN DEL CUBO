@@ -1,0 +1,14 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+	float l, v;
+		cout<<"digite el tamaño del lado: "; cin>>l;
+		v=l*l*l;
+		cout<<"el volumen del cubo es: "<<v<<endl;
+	getch();
+	
+}
