@@ -1,0 +1,22 @@
+def cargarlista(Nicolas,n):
+    for i in range(n):
+        a=int(input("Digite el numero: "))
+        Nicolas.append(a)
+    print(Nicolas)
+
+multiplicacion=0
+suma=0
+Nicolas=[]
+Lista2=[]
+n=int(input("Digite el limite de la lista:"))
+cargarlista(Nicolas,n)
+
+for i in range(len(Nicolas)):
+    suma+=Nicolas[i]
+    promedio=suma/n
+print(promedio)
+
+for i in range(len(Nicolas)):
+    multiplicacion= Nicolas[i]*promedio
+    Lista2.append(multiplicacion)
+print(Lista2)
