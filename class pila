@@ -1,0 +1,30 @@
+class pila:
+    def_init__(self):
+        self.items=[]
+    def encolar(self,x):
+        self.items.append(x)
+    def desencolar(self):
+        try:
+            return.self.items.pop(0)
+        except:
+            raise ValueError("la cola esta vacia")
+        def es__vacia(self):
+            return self.items==[]
+        def mostrar_pila(self):
+            print()
+        
+                
+n=int(input("ingrese la cantidad de numeros"))
+p=pila{x}
+op=" "
+while op:
+    print("--------------------------------------------")
+    print("***** MENU**********")
+    print("1. añadir numero: ")
+    print("2. cargar los elementos primos: ")
+    print("3. mostrar la cantidad de elementos: ")
+    print("4. Salir")
+    print("---------------------------------------------")
+    op=input("ingrese una opcion valida")
+    if op=:
+        p.encolar
