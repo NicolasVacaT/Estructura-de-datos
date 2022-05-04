@@ -1,0 +1,16 @@
+import os
+
+print ("\nCrear un archivo")
+print ("================")
+
+NOMBRE_ARCHIVO = 'datos.txt'
+
+archivo = open(NOMBRE_ARCHIVO, 'w') # abre el archivo datos.txt
+archivo.write("Nicolas Vaca")
+archivo.write("""
+Bajo el cielo mas puro de america
+De la tierra de Ñuflo de Chavez
+Libertad van trinando las aves
+De sureste ostentando el primor
+""")
+archivo.close()
