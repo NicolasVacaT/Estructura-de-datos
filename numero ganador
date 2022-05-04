@@ -1,0 +1,7 @@
+#Pedir una lista de n numeros y clasificarlos
+m=int(input("ingresar el numero de elementos: "))
+a= []
+for i in range (m):
+    a.append(int(input("introduce un numero ganador: ")))
+a.sort()
+print("los numeros ganadores son: ",str(a))
