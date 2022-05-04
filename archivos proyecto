@@ -1,0 +1,41 @@
+import os
+
+print ("\nCrear un archivo")
+print ("================")
+
+NOMBRE_ARCHIVO = 'datos.txt'
+
+archivo = open(NOMBRE_ARCHIVO, 'w') #Abre el archivo datos.txt
+archivo.write("Nicolas Vaca,\t19 Años,\t76.40Kg,\t1.71 m\n")
+archivo.write("\tBruno Gonzales,\t19 Años,\t75.60Kg,\t1.73 m\n")
+archivo.write("\tVictor Poppe,\t19 Años,\t72.30Kg,\t1.72 m\n")
+archivo.write("\tFabricio Peña,\t19 Años,\t76.80Kg,\t1.74 m\n")
+archivo.close()
+
+if NOMBRE_ARCHIVO in os.listdir("."):
+    print ("\nArchivo creado en la ruta: \n\n\t{0}/{1}".format(os.getcwd(), NOMBRE_ARCHIVO))
+else:
+    print ("El archivo no fue creado!!!\n")
+print ("\n\nLeer un archivo")
+print ("===============\n")
+
+archivo = open(NOMBRE_ARCHIVO, 'r')
+contenido = archivo.read()
+print (contenido)
+archivo.close()
+
+print ("\n\nIterar sobre un archivo")
+print ("=======================\n")
+
+archivo = open(NOMBRE_ARCHIVO, 'r')
+for linea in archivo:
+    print (linea)
+print ("\n")
+archivo.close()
+
+
+print ("\nEliminar un archivo")
+print ("===================")
+
+os.remove(os.getcwd()+"/"+NOMBRE_ARCHIVO)
+print ("\nEliminado archivo desde la ruta: \n\n\t{0}/{1}".format(os.getcwd(), NOMBRE_ARCHIVO))
